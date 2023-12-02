@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Oswald:wght@400;600&family=Raleway:wght@400;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/373efd69166d31c2b5052a505527acbf?family=Graphik-Medium');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 3.2rem;
+  padding: 0.2rem;
+  background-color: rgb(31, 41, 55);
+  z-index: 100;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 15%;
+  font-family: 'Graphik-Medium', sans-serif;
+}
+
+#logo-image {
+  height: 100%;
+  padding-top: 0.2rem;
+}
+
+#logo-image img {
+  object-fit: cover;
+  width: 3rem;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li {
+  width: 11rem;
+  background-image: radial-gradient(
+    circle,
+    #3667b1,
+    #1b56b0,
+    #0043ac,
+    #002fa6,
+    #06139d
+  );
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 2rem 0 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: rgb(216, 210, 255);
+  transition: all 0.3s;
+}
+
+.nav-list li:active,
+.nav-list li:hover {
+  outline: 0;
+  filter: grayscale(60%);
+  color: rgb(255, 255, 255);
+}
+
+/* End of Header */
+
+/* Section content */
+
+#hero-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.5rem 0;
+  padding: 0 10%;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(31, 41, 55);
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  height: 25rem;
+}
+
+h1 {
+  color: rgb(249, 250, 248);
+  text-align: center;
+  padding: 3rem 1rem 0.5rem 1rem;
+  font-size: 2.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: rgb(229, 231, 235);
+}
+
+#hero-image {
+  width: 18rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: rgb(56, 130, 246);
+  width: 6rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 3px;
+  font: inherit;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(26, 105, 233);
+}
+
+#info-section {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  font-size: 2.3rem;
+  text-align: center;
+  color: rgb(31, 41, 55);
+}
+
+#info-section ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 3.5rem auto 0 auto;
+}
+
+#info-section li {
+  width: 15rem;
+}
+
+#info-section li img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+#info-section li img:hover,
+#info-section li img:active {
+  scale: 1.04;
+}
+
+#info-section p {
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+}
+
+#citation-section {
+  background-color: rgb(229, 231, 235);
+  height: 20rem;
+  margin: 0;
+  padding: 1rem 25%;
+}
+
+#citation-section p {
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+#citation-sign {
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+/* End of Section content */
+
+/* Contact Section */
+
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 18%;
+  padding: 1rem;
+  background-color: rgb(56, 130, 246);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+#contact-section h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#contact-section p {
+  margin-top: 0;
+}
+
+#contact-section button {
+  border: 0.2rem solid rgb(255, 255, 255);
+}
+
+/* End of Contact Section */
+
+/* Footer */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 3.2rem;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 41, 55);
+  color: rgb(255, 255, 255);
+}
+
+/* End of Footer */
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  header {
+    margin: 0 auto;
+  }
+  nav {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .nav-list li {
+    width: 6rem;
+    font-size: 60%;
+    margin: 0.5rem;
+  }
+
+  #hero-section {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  #hero {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  #info-section ul {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    gap: 2rem;
+  }
+
+  #info-section h2 {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+  }
+
+  #citation-section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  #citation-section p {
+    font-size: 1.2rem;
+  }
+
+  #contact-section {
+    margin: 1rem;
+  }
+}
